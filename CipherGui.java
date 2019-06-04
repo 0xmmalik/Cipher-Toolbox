@@ -1,6 +1,7 @@
 package ciphergui;
 
 import javax.swing.*;
+import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -25,6 +26,9 @@ public class CipherGui {
     private JFormattedTextField alphaPlain;
     private JFormattedTextField alphaAlpha;
     private JButton encAlpha;
+    private JFormattedTextField alphaCiph;
+    private JFormattedTextField deAlphaAlpha;
+    private JButton decAlpha;
 
     public CipherGui() {
         caesarLearn.addActionListener(new ActionListener() {
@@ -69,7 +73,7 @@ public class CipherGui {
             public void actionPerformed(ActionEvent e) {
                 String encoded = "";
                 String original = alphaPlain.getText().toLowerCase();
-                String new_alpha = alphaAlpha.getText();
+                String new_alpha = alphaAlpha.getText().toLowerCase();
 
                 if(new_alpha.length() == 26) {
                     for (int i = 0; i < original.length(); i++) {
@@ -169,6 +173,23 @@ public class CipherGui {
                     encoded += character;
                 }
                 JOptionPane.showMessageDialog(null, encoded);
+            }
+        });
+
+        decAlpha.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String decoded = "";
+                String original = alphaCiph.getText().toLowerCase();
+                String new_alpha = deAlphaAlpha.getText().toLowerCase();
+
+                for (int i = 0; i < original.length(); i++) {
+                    char character = original.charAt(i);
+                    int dec_char = 0;
+                    dec_char = new_alpha.indexOf(character);
+                    decoded += (char)(dec_char + 'a');
+                }
+                JOptionPane.showMessageDialog(null, decoded);
             }
         });
     }

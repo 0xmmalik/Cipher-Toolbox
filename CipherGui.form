@@ -372,6 +372,7 @@
                       </grid>
                     </constraints>
                     <properties>
+                      <text value="nopqrstuvwxyzabcdefghijklm"/>
                       <toolTipText value="text to encode or decode"/>
                     </properties>
                   </component>
@@ -387,7 +388,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <grid id="239f3" layout-manager="GridLayoutManager" row-count="8" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="239f3" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -456,11 +457,6 @@
                       <text value="Plaintext:"/>
                     </properties>
                   </component>
-                  <hspacer id="bcb40">
-                    <constraints>
-                      <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                  </hspacer>
                   <component id="9b798" class="javax.swing.JFormattedTextField" binding="alphaPlain">
                     <constraints>
                       <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
@@ -473,7 +469,7 @@
                   </component>
                   <component id="72f9" class="javax.swing.JLabel">
                     <constraints>
-                      <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="DECODE"/>
@@ -481,44 +477,41 @@
                   </component>
                   <component id="d3e85" class="javax.swing.JLabel">
                     <constraints>
-                      <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <text value="Key:"/>
+                      <text value="Alphabet:"/>
                     </properties>
                   </component>
-                  <component id="8ebdd" class="javax.swing.JButton">
+                  <component id="8ebdd" class="javax.swing.JButton" binding="decAlpha">
                     <constraints>
-                      <grid row="7" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="6" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="Decode Text"/>
                     </properties>
                   </component>
-                  <component id="97a3" class="javax.swing.JSpinner">
+                  <component id="95fb4" class="javax.swing.JFormattedTextField" binding="deAlphaAlpha">
                     <constraints>
-                      <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <editor value=""/>
                       <enabled value="true"/>
+                      <text value="zyxwvutsrqponmlkjihgfedcba"/>
                       <toolTipText value="number of letters plaintext was shifted by"/>
                     </properties>
-                    <clientProperties>
-                      <html.disable class="java.lang.Boolean" value="false"/>
-                    </clientProperties>
                   </component>
                   <component id="3b7ea" class="javax.swing.JLabel">
                     <constraints>
-                      <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="Ciphertext:"/>
                     </properties>
                   </component>
-                  <component id="a02c0" class="javax.swing.JFormattedTextField">
+                  <component id="a02c0" class="javax.swing.JFormattedTextField" binding="alphaCiph">
                     <constraints>
-                      <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                      <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
                       </grid>
                     </constraints>
